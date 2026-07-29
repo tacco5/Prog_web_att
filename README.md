@@ -1,6 +1,6 @@
 <div align="center">
 
-## 💻 Programação web
+## 💻 Programação web - Disciplina do 4° Semestre
 
 ### Repositório da disciplina
 
@@ -20,4 +20,4 @@
 - [ ] Atividade 05
 - [ ] Atividade 06
 
-Este repositório reúne as atividades e projetos desenvolvidos durante a disciplina de **Programação**.
+Este repositório reúne as atividades e projetos desenvolvidos durante a disciplina de **Programação web**.
