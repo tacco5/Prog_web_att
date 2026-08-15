@@ -8,23 +8,51 @@ body {
 .cartao {
     background-color: white;
     width: 350px;
-    margin: 50px auto;
+    margin: 30px auto;
     padding: 25px;
     border-radius: 10px;
+    border: 3px solid #2563eb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-img {
+.cartao img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #2563eb;
 }
 
-h1 {
+.cartao h1 {
     color: #2563eb;
+    margin-bottom: 10px;
 }
 
-button {
+.cartao p {
+    margin-bottom: 20px;
+}
+
+.cartao a {
     display: block;
-    margin: 10px;
-    color: #07215a;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+
+    background-color: #2563eb;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    transition: 0.3s;
+
+
+    
+}
+
+.cartao a:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.03);
 }
