@@ -1,0 +1,1324 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fffaf9;
+    color: #292525;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =====================================================
+   BARRA SUPERIOR
+===================================================== */
+
+.top-bar {
+    width: 100%;
+    background-color: #292525;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.header {
+    width: 100%;
+    min-height: 90px;
+    padding: 20px 6%;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #eee4e1;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-align: center;
+    line-height: 1;
+}
+
+.logo h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.logo span {
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #9b7770;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    position: relative;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.menu a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #b78b82;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #a8786f;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+/* ÍCONES */
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-icons button {
+    border: none;
+    background: transparent;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.header-icons button:hover {
+    background-color: #f5e9e6;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255, 250, 249, 0.95) 0%,
+            rgba(255, 250, 249, 0.75) 45%,
+            rgba(255, 250, 249, 0.05) 100%
+        ),
+        url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content > span {
+    color: #a8786f;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.hero h2 {
+    margin: 20px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 1.05;
+
+    font-weight: 500;
+}
+
+.hero p {
+    max-width: 500px;
+
+    color: #665c59;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+/* BOTÕES DO HERO */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 15px 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #292525;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #a8786f;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 1px solid #292525;
+    background-color: transparent;
+}
+
+.btn-secondary:hover {
+    background-color: #292525;
+    color: white;
+}
+
+
+/* =====================================================
+   TÍTULOS DAS SEÇÕES
+===================================================== */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    display: block;
+
+    color: #a8786f;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 44px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   CATEGORIAS
+===================================================== */
+
+.categories {
+    padding: 100px 6%;
+    background-color: #ffffff;
+}
+
+.category-grid {
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.category-card {
+    position: relative;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    background-color: #eee;
+
+    border-radius: 4px;
+}
+
+.category-card img {
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.08);
+}
+
+.category-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        transparent 45%,
+        rgba(0, 0, 0, 0.7)
+    );
+}
+
+.category-info {
+    position: absolute;
+
+    bottom: 30px;
+    left: 25px;
+
+    z-index: 2;
+
+    color: white;
+}
+
+.category-info h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+    font-weight: 500;
+
+    margin-bottom: 5px;
+}
+
+.category-info span {
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   PRODUTOS
+===================================================== */
+
+.products-section {
+    padding: 100px 6%;
+    background-color: #fffaf9;
+}
+
+.products-grid {
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.product-card {
+    background-color: #ffffff;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(40, 25, 20, 0.08);
+}
+
+
+/* IMAGEM DO PRODUTO */
+
+.product-image {
+    height: 430px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #f3eeee;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+
+/* TAG */
+
+.tag {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    z-index: 5;
+
+    background-color: #292525;
+    color: white;
+
+    padding: 7px 12px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.tag.discount {
+    background-color: #a8786f;
+}
+
+
+/* FAVORITO */
+
+.favorite {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    z-index: 5;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.favorite:hover {
+    background-color: #292525;
+    color: white;
+}
+
+
+/* INFORMAÇÕES */
+
+.product-info {
+    padding: 20px 18px 25px;
+}
+
+.product-category {
+    color: #a8786f;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.product-info h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    margin: 7px 0;
+}
+
+.rating {
+    color: #c49b52;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+.rating span {
+    color: #999;
+    margin-left: 5px;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.old-price {
+    display: block;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    text-decoration: line-through;
+}
+
+.prices .price {
+    margin-top: 2px;
+}
+
+
+/* BOTÃO COMPRAR */
+
+.buy-button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #292525;
+
+    background-color: #292525;
+    color: white;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background-color: transparent;
+    color: #292525;
+}
+
+
+/* =====================================================
+   BOTÃO CENTRAL
+===================================================== */
+
+.center-button {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.outline-button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid #292525;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.outline-button:hover {
+    background-color: #292525;
+    color: white;
+}
+
+
+/* =====================================================
+   PROMOÇÃO
+===================================================== */
+
+.promo {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(48, 38, 35, 0.55),
+            rgba(48, 38, 35, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.promo-content {
+    max-width: 600px;
+}
+
+.promo-content span {
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.promo-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 70px;
+    font-weight: 500;
+
+    margin: 15px 0;
+}
+
+.promo-content p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.promo-button {
+    display: inline-block;
+
+    background-color: white;
+    color: #292525;
+
+    padding: 15px 30px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.promo-button:hover {
+    background-color: #292525;
+    color: white;
+}
+
+
+/* =====================================================
+   SOBRE A MARCA
+===================================================== */
+
+.about {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 600px;
+
+    background-color: #f3e8e5;
+}
+
+.about-image {
+    height: 600px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-content {
+    padding: 80px 10%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+.about-content > span {
+    color: #a8786f;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+.about-content h2 {
+    max-width: 500px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 48px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    margin: 15px 0 25px;
+}
+
+.about-content p {
+    max-width: 500px;
+
+    color: #665c59;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.about-content .outline-button {
+    margin-top: 15px;
+}
+
+
+/* =====================================================
+   BENEFÍCIOS
+===================================================== */
+
+.benefits {
+    padding: 70px 6%;
+
+    background-color: white;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+    text-align: center;
+}
+
+.benefit {
+    padding: 15px;
+}
+
+.benefit-icon {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.benefit h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+    margin-bottom: 7px;
+}
+
+.benefit p {
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   NEWSLETTER
+===================================================== */
+
+.newsletter {
+    padding: 100px 20px;
+
+    background-color: #eee1dd;
+
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 650px;
+
+    margin: auto;
+}
+
+.newsletter-content > span {
+    color: #a8786f;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+.newsletter h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+    font-weight: 500;
+
+    margin: 15px 0;
+}
+
+.newsletter p {
+    color: #665c59;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    max-width: 550px;
+
+    margin: auto;
+
+    display: flex;
+
+    background-color: white;
+
+    border: 1px solid #ddd0cc;
+}
+
+.newsletter-form input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 16px 20px;
+
+    border: none;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+.newsletter-form button {
+    padding: 0 25px;
+
+    border: none;
+
+    background-color: #292525;
+    color: white;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #a8786f;
+}
+
+.newsletter small {
+    display: block;
+
+    color: #888;
+
+    font-size: 10px;
+
+    margin-top: 15px;
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+.footer {
+    background-color: #292525;
+
+    color: white;
+}
+
+.footer-container {
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 70px 6%;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+
+    gap: 50px;
+}
+
+.footer-brand h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 30px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    max-width: 300px;
+
+    color: #c4bbb8;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* REDES SOCIAIS */
+
+.social {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.social a {
+    color: #ddd;
+
+    font-size: 11px;
+
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #d8a69c;
+}
+
+
+/* COLUNAS */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer-column h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.footer-column a,
+.footer-column p {
+    color: #c4bbb8;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: white;
+
+    padding-left: 5px;
+}
+
+
+/* RODAPÉ FINAL */
+
+.footer-bottom {
+    padding: 20px 6%;
+
+    border-top: 1px solid #403a38;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #999;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE - TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+    .category-grid,
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-image {
+        height: 500px;
+    }
+
+    .about-content h2 {
+        font-size: 40px;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE - TABLET MENOR
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .header {
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        justify-content: center;
+    }
+
+    .menu {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+    }
+
+    .hero {
+        min-height: 600px;
+
+        background-position: 60% center;
+    }
+
+    .hero h2 {
+        font-size: 55px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        height: 500px;
+    }
+
+    .about-content {
+        padding: 70px 8%;
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE - CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .top-bar {
+        font-size: 10px;
+    }
+
+    .header {
+        padding: 18px 5%;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .header-icons {
+        gap: 2px;
+    }
+
+    .header-icons button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .menu {
+        justify-content: flex-start;
+
+        gap: 20px;
+    }
+
+    .menu a {
+        white-space: nowrap;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 600px;
+
+        padding: 60px 7%;
+
+        background-position: 65% center;
+    }
+
+    .hero h2 {
+        font-size: 45px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* TÍTULOS */
+
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+
+    /* CATEGORIAS */
+
+    .categories,
+    .products-section {
+        padding: 70px 5%;
+    }
+
+    .category-grid,
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        height: 500px;
+    }
+
+    .product-image {
+        height: 520px;
+    }
+
+
+    /* PROMO */
+
+    .promo-content h2 {
+        font-size: 55px;
+    }
+
+
+    /* SOBRE */
+
+    .about-image {
+        height: 450px;
+    }
+
+    .about-content {
+        padding: 60px 7%;
+    }
+
+    .about-content h2 {
+        font-size: 38px;
+    }
+
+
+    /* BENEFÍCIOS */
+
+    .benefits {
+        grid-template-columns: 1fr;
+
+        padding: 60px 8%;
+    }
+
+
+    /* NEWSLETTER */
+
+    .newsletter {
+        padding: 70px 6%;
+    }
+
+    .newsletter h2 {
+        font-size: 35px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+
+        border: none;
+
+        gap: 10px;
+
+        background: transparent;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+
+        padding: 16px;
+
+        border: 1px solid #ddd0cc;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+
+        padding: 16px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        padding: 60px 7%;
+
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        padding: 20px 7%;
+    }
+
+}
+
+
+/* =====================================================
+   ANIMAÇÕES
+===================================================== */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.hero-content {
+    animation: aparecer 1s ease;
+}
+
+
+/* =====================================================
+   SELEÇÃO DE TEXTO
+===================================================== */
+
+::selection {
+    background-color: #c9a29a;
+    color: white;
+}

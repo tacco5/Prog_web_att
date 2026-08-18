@@ -1,5 +1,5 @@
 function mostrarMensagem() {
 
     document.getElementById("mensagem").textContent =
-        "🍔 Receita finalizada! Bom apetite!";
+        "Receita finalizada! Bom apetite!";
 }
