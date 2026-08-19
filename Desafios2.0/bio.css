@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        120deg,
+        #000000,
+        #0000a4,
+        #b121ff,
+        #000000
+    );
+
+    background-size: 300% 300%;
+
+    animation: gradient 8s ease infinite;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.container {
+    width: 100%;
+    max-width: 450px;
+
+    background-color: white;
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    background-color: #2563eb;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #111827;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.bio {
+    color: #6b7280;
+
+    text-align: center;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.links {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.link {
+    width: 100%;
+
+    padding: 15px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.link:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.social a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
